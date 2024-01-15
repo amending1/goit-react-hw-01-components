@@ -1,11 +1,11 @@
-import user from '.user.json';
-import css from '.src/components/Profile/profile.module.css';
+import user from './user.json';
+import css from './profile.module.css';
 
 
 function Profile ({username, tag, location, avatar, stats}) {
   return (
       <div className={css.profile}>
-  <div className="description">
+  <div className={css.description}>
     <img
       src={user.avatar}
       alt="User avatar"
@@ -33,3 +33,5 @@ function Profile ({username, tag, location, avatar, stats}) {
 </div>
   )
 }
+
+export default Profile;
