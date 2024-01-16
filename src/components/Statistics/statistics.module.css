@@ -7,7 +7,7 @@
   text-align: center;
  
   background: aliceblue;
-  box-shadow: 0px 2px 1px 0px rgba(46, 47, 66, 0.08),
+  box-shadow: 1px 5px 3px 1px rgba(46, 47, 66, 0.08),
     0px 1px 1px 0px rgba(46, 47, 66, 0.16),
     0px 1px 6px 0px rgba(46, 47, 66, 0.08);
 }
@@ -31,7 +31,6 @@
 
 .statList {
   display: flex;
-  color: white;
   --random-color: ${generateRandomColor()};
 }
 
@@ -41,5 +40,16 @@
   justify-content: center;
   align-items: center;
   flex: 1;
-  padding: 20px;
+  padding-top: 20px;
+  padding-bottom: 20px;
+}
+
+.label {
+    color: white;
+    font-size: 14px;
+}
+
+.percentage {
+    color: white;
+    font-size: 14px;
 }
