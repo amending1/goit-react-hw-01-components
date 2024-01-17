@@ -26,11 +26,11 @@ return (
 );
 };
 
-TransactionHistory.propTypes.items = {
-    id: PropTypes.string.isRequired,
+TransactionHistory.propTypes = {
+  items: PropTypes.shape({ id: PropTypes.string.isRequired,
     type: PropTypes.string.isRequired,
     amount: PropTypes.number.isRequired,
-    likes: PropTypes.string.isRequired,
+    likes: PropTypes.string.isRequired,}).isRequired,   
 }
 
 
