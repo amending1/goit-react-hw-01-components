@@ -18,7 +18,7 @@ function Statistics({ title, stats }) {
       {title && <h2 className={css.title}>Upload stats</h2>}
 
       <ul className={css.statList}>
-        {stats.map((data) => (
+        {stats.map(data => (
           <li
             key={data.id}
             className={css.item}
@@ -35,12 +35,13 @@ function Statistics({ title, stats }) {
 
 Statistics.propTypes = {
   title: PropTypes.string.isRequired,
-}
-
-Statistics.propTypes.stats = {
-  id: PropTypes.string.isRequired,
-  label: PropTypes.string.isRequired,
-  percentage: PropTypes.number.isRequired,
-}
+  stats: PropTypes.arrayOf(
+    PropTypes.shape({
+      id: PropTypes.string.isRequired,
+      label: PropTypes.string.isRequired,
+      percentage: PropTypes.number.isRequired,
+    }).isRequired,
+  ),
+};
 
 export default Statistics;
