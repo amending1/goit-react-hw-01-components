@@ -4,6 +4,7 @@
   justify-content: center;
   width: 300px;
   border-radius: 10px;
+  overflow: hidden;
   background: aliceblue;
   box-shadow: 0px 2px 1px 0px rgba(46, 47, 66, 0.08),
     0px 1px 1px 0px rgba(46, 47, 66, 0.16),
